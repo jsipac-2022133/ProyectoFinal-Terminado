@@ -1,0 +1,674 @@
+{
+	"info": {
+		"_postman_id": "e04f6a7e-2df4-4f59-8e85-a7aff020041d",
+		"name": "Ventas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32949353"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "http://localhost:2880/updateMyAcount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhODU0ZTY3ZmQ2NzJmYmJlY2NlNzYiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5ODY4Mzg3LCJleHAiOjE3MDk4NzU1ODd9.2wowlNdSsVc8_dSXzHJ6lsxhNQ8Q4UohiGYjlRTaD28"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "surname",
+									"value": "Mucía",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/updateMyAcount/65ea854e67fd672fbbecce76"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/deleteMyAccount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2MTQxYWE4YzkzODQ2ZTM2MTBkZGMiLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5ODY3ODQyLCJleHAiOjE3MDk4NzUwNDJ9.syCrZxnrKpGL7tT_-R8yYT-b6VcNxS1tzoOtE11A-lU"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/deleteMyAccount/65d6141aa8c93846e3610ddc"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "jsipac",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2880/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2880",
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "James",
+									"type": "default"
+								},
+								{
+									"key": "surname",
+									"value": "Sipac",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jsipac@kinal.org.gt",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "jsipac",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "1ra calle zona Guatemala",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2880/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2880",
+							"path": [
+								"register"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/updateUser/65ea854e67fd672fbbecce76",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk4NjkyOTQsImV4cCI6MTcwOTg3NjQ5NH0.P0oNTSt4hhexuGhjkWOyAkYSeXqTyoctvbX1zcXDc7o"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "surname",
+									"value": "Perez",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/updateUser/65ea854e67fd672fbbecce76"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/deleteUser/65eab568afa795886d5caca7",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhYjQyN2FmYTc5NTg4NmQ1Y2FjOWYiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk4ODA3MTcsImV4cCI6MTcwOTg4NzkxN30.amwAK1Mms1n95lDb-nOaDN6tuS8kg1P1eyYmy4Gm93A"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:2880/deleteUser/65eab568afa795886d5caca7"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/selectUsers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhYjdiMjk3NmE0OGI4N2Q2ZmU5NzUiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk4ODE0MTEsImV4cCI6MTcwOTg4ODYxMX0.2Ackj1Aqd8CmxTTTUrNEakGr1Rlzyk8FKz0u4cxM8zo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/selectUsers"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "http://localhost:2880/updateCategory/65d6bd8c570627d0059bf9d4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg1NzE1OTksImV4cCI6MTcwODU3ODc5OX0.tiW5G452ys7HMPUk3WkHuTZm_C2-ph8wwRMXlQpuGP8"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Incluye voleyball",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/updateCategory/65d6bd8c570627d0059bf9d4"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/selectCategories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg1NzE1OTksImV4cCI6MTcwODU3ODc5OX0.tiW5G452ys7HMPUk3WkHuTZm_C2-ph8wwRMXlQpuGP8"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/selectCategories"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/deleteCategory/65d6bd8c570627d0059bf9d4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg1NzE1OTksImV4cCI6MTcwODU3ODc5OX0.tiW5G452ys7HMPUk3WkHuTZm_C2-ph8wwRMXlQpuGP8"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:2880/deleteCategory/65d6bd8c570627d0059bf9d4"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/addNewCategory",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg1NzE1OTksImV4cCI6MTcwODU3ODc5OX0.tiW5G452ys7HMPUk3WkHuTZm_C2-ph8wwRMXlQpuGP8"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Deportes",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Este incluye fútbol",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/addNewCategory"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "http://localhost:2880/deleteProduct/65d738e6c25fbb1801c841a5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg2MDM1MDAsImV4cCI6MTcwODYxMDcwMH0.Fu_Ct4PRaVDbb-FDBTB-THFxZoXBAgWVe514gqmcqZI"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:2880/deleteProduct/65d738e6c25fbb1801c841a5"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/updateProduct/65d738e6c25fbb1801c841a5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg2MDM1MDAsImV4cCI6MTcwODYxMDcwMH0.Fu_Ct4PRaVDbb-FDBTB-THFxZoXBAgWVe514gqmcqZI"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Balón",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/updateProduct/65d738e6c25fbb1801c841a5"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/selectProducts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg2MDM1MDAsImV4cCI6MTcwODYxMDcwMH0.Fu_Ct4PRaVDbb-FDBTB-THFxZoXBAgWVe514gqmcqZI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/selectProducts"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/addNewProduct",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg2MDM1MDAsImV4cCI6MTcwODYxMDcwMH0.Fu_Ct4PRaVDbb-FDBTB-THFxZoXBAgWVe514gqmcqZI"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Medias negras",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Para fútbol",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "75",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "65d6c030a2953a53f1bea99e",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/addNewProduct"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/moreSelled",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk3NzkxNjQsImV4cCI6MTcwOTc4NjM2NH0.85fFsx7-eWN-qYBeGZSiSPH-uYOS37LLqSTCrTySw8E"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/moreSelled"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/searchByCategory",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk3NzkxNjQsImV4cCI6MTcwOTc4NjM2NH0.85fFsx7-eWN-qYBeGZSiSPH-uYOS37LLqSTCrTySw8E"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category",
+									"value": "Electrónicos",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/searchByCategory"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/searchByName",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk3ODY1MTgsImV4cCI6MTcwOTc5MzcxOH0.yIkeHuKucHe6c069RMLdaP0iLXlfjJ4KMUqIDlwex38"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Balón fut5",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/searchByName"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk3ODY1MTgsImV4cCI6MTcwOTc5MzcxOH0.yIkeHuKucHe6c069RMLdaP0iLXlfjJ4KMUqIDlwex38"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "medias",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/search"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/productosAgotados",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk4MTgzODYsImV4cCI6MTcwOTgyNTU4Nn0.mRROFzNReRCoXV2NmlhSKQ5r8lXCibH99FsMXEOL98E"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/productosAgotados"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "http://localhost:2880/addToCart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg2MTk3MzgsImV4cCI6MTcwODYyNjkzOH0.XRzv6eJ8Sa3Cz8aDtAkfF8gCfhQ6pj5LVnFf2_d0rZQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "productId",
+									"value": "65d73a8c705ddf9bdbb8859a",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "20",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/addToCart"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/deleteFromCart/65d73c4fbf2dda9f1e8b4bf3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg2MTI0MDcsImV4cCI6MTcwODYxOTYwN30.TnFJsuEW7mYNuABjC3NzQZb4UqqwGRoJV5gWktjxzU4"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:2880/deleteFromCart/65d73c4fbf2dda9f1e8b4bf3"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/updateQuantityProduct/65e08c100a2037b9dbbdbf96",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUwOGNiYTBhMjAzN2I5ZGJiZGJmYTciLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzA5MjE0OTIzLCJleHAiOjE3MDkyMjIxMjN9.POMyw-tYwz8bDh1ZS0zPXjmbmRdULovD2GvnPk9u_Kk"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "quantity",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/updateQuantityProduct/65e08c100a2037b9dbbdbf96"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Compra",
+			"item": [
+				{
+					"name": "http://localhost:2880/compra",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk3NzI5NjgsImV4cCI6MTcwOTc4MDE2OH0.RwskfeNwPnqwK78nnTgR77KQZL7NpOVOuqCAab14kx4"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/compra"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/historial",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk3NzkxNjQsImV4cCI6MTcwOTc4NjM2NH0.85fFsx7-eWN-qYBeGZSiSPH-uYOS37LLqSTCrTySw8E"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/historial"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2880/updateQuantityPurchase/65ea6c10072b9e29b858b8a0/65e936b39e91f8c20a2a2114",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWQ2YmJjNmIyYTc0ZGNhMWQ3ODY5YWQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDk4NjE0NjAsImV4cCI6MTcwOTg2ODY2MH0.79wAYNg80cE0zqIVnlOU9jYiof8tiVw1-WXEcUbN5IM"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "quantity",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/updateQuantityPurchase/65ea6c10072b9e29b858b8a0/65e936b39e91f8c20a2a2114"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
